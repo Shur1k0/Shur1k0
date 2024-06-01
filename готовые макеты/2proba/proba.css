@@ -1,0 +1,79 @@
+/*Название просто копируй*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.6;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+}
+body{
+    background-image: url(../image/фон4,1.jpg);
+}
+.name{
+    margin-bottom: 10px;
+    font-family: sans-serif;/*Название и его шрифт*/
+    font-weight: 700;
+}
+#soft{
+    font-size: 27px;
+}
+#e{
+    font-size: 45px;
+    color: #39E639;
+}
+#nglish{
+    font-size: 45px;
+}
+.return{
+    border: 2px solid black;
+    border-radius: 28px;
+    text-decoration: none;
+    min-width: 280px;
+    width: 280px;
+    height: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.return:hover{
+    background-color: #9dfa9d;
+}
+/*-------------------------------------------------------------------------------------*/
+
+.free{
+    display: flex;
+    justify-content: center;
+    margin-top: 225px;
+    font-size: 100px;
+}
+.record{
+    display: flex;
+    justify-content: center;
+    
+}
+#text{
+    width: 33%;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #9dfa9d;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+#card{
+    width: 15%;
+    margin: 30px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
