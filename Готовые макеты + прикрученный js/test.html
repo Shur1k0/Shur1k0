@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/test.css" type="text/css" rel="stylesheet" media="screen">
+    <link rel="icon" href="../project/image/favicon.png" type="image/x-icon">
+    <title>Soft english</title>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <span id="soft">soft</span><br>
+            <span id="e">e</span><span id="nglish">nglish</span>
+        </div>
+        <a href="main.html" class="return">
+            <img src="../project/image/arrow.png" alt="">Вернуться на главную
+        </a>
+    </header>
+    <div class="container">
+        <div class="area">
+            <div class="quiz" id="quiz">
+                <div class="quiz-indicator" id="indicator"></div>
+                
+                <div class="quiz-questions" id="questions"></div>
+                
+                <div class="quiz-results" id="results">
+                    <div class="quiz-results-item">
+                        <div class="quiz-results-item__question">Вопрос 1</div>
+                        <ul class="quiz-results-item__answers">
+                            <li>Ответ 1</li>
+                            <li>Ответ 2</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button class="btn-next" id="btn-next" disabled>Далее</button>
+                    <button class="btn-restart" id="btn-restart">С начала</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/test.js"></script>
+</body>
+</html>
