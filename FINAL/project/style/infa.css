@@ -1,0 +1,217 @@
+:root{
+    --bg-color: #9dfa9d;
+    --font-color: #000000;
+    --e-color: #39E639;
+    --shad-color: #000000;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,1.jpg);
+}
+
+[data-theme = "dark"]{
+    --bg-color: #FF8C47;
+    --font-color: #ffffff;
+    --e-color: #EA4C04;
+    --shad-color: #ffffff;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,2.jpg);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .return {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .cont1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #image {
+        margin: 20px 0;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .text {
+        margin: 20px 0;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .cont2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card {
+        margin: 20px 0;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .card .foto, .card .text1 {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.6;
+    width: 100%;
+    border-bottom: 2px solid var(--line-color);
+    box-shadow: 0px 50px 100px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+body{
+    background-image: var(--img-fon);
+}
+/*Название*/
+.name{
+    color: var(--font-color);
+    margin-bottom: 10px;
+    font-family: sans-serif;/*Название и его шрифт*/
+    font-weight: 700;
+}
+#soft{
+    font-size: 27px;
+}
+#e{
+    font-size: 45px;
+    color: var(--e-color);
+}
+#nglish{
+    font-size: 45px;
+}
+.tema{
+    margin: 20px;
+    color: orange;
+}
+.return{
+    border: 2px solid var(--font-color);
+    border-radius: 28px;
+    text-decoration: none;
+    min-width: 280px;
+    width: 280px;
+    height: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    color: var(--font-color);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.return:hover{
+    background-color: var(--bg-color);
+}
+/*-------------------------------------------------------------------------------------*/
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    flex-wrap: nowrap;
+}
+#image{
+    min-width: 250px;
+    width: 250px;
+    height: 400px;
+    align-items: center;
+    margin: 40px;
+    margin-left: 150px;
+
+    border-radius: 150px;
+}
+#image img{
+    width: 100%;
+    height: 400px;
+    border-radius: 150px;
+}
+.text{    
+    overflow: hidden;
+    min-width: 350px;
+    width: 50%;
+    height: 400px;
+    color: var(--font-color);
+    border-radius: 50px;
+    margin: 40px 375px 40px 40px;
+}
+#text{
+    color: var(--font-color);
+    margin: 20px;
+    font-size: 30px;
+}
+#hello{
+    color: var(--font-color);
+    font-size: 50px;
+}
+
+.cont2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 450px;
+}
+.card .foto{
+    width: 250px;
+    height: 350px;
+    margin: 50px 35px;
+    border-radius: 25px;
+
+}
+.card .text1{    
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    margin: 50px 10px;
+    border-radius: 25px;
+    border: 2px dotted var(--line-color);
+}
+#text1{
+    margin: 15px;
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+#text2{
+    margin: 15px;
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+#story{
+    color: var(--font-color);
+    margin-left: 80px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.foto1 img{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+}
+.foto2 img{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+}
+.text1{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+}

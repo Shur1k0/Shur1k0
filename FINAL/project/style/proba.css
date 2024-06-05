@@ -1,0 +1,157 @@
+:root{
+    --bg-color: #9dfa9d;
+    --font-color: #000000;
+    --e-color: #39E639;
+    --shad-color: #000000;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,1.jpg);
+}
+
+[data-theme = "dark"]{
+    --bg-color: #FF8C47;
+    --font-color: #ffffff;
+    --e-color: #EA4C04;
+    --shad-color: #ffffff;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,2.jpg);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .return {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .free {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .record {
+        margin-top: 20px;
+    }
+
+    .text {
+        width: 40%;
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .cards {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 40%;
+        margin: 20px 0;
+        height: 100px;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.6;
+    width: 100%;
+    border-bottom: 2px solid var(--line-color);
+    box-shadow: 0px 50px 100px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+body{
+    background-image: var(--img-fon);
+}
+/*Название*/
+.name{
+    color: var(--font-color);
+    margin-bottom: 10px;
+    font-family: sans-serif;/*Название и его шрифт*/
+    font-weight: 700;
+}
+#soft{
+    font-size: 27px;
+}
+#e{
+    font-size: 45px;
+    color: var(--e-color);
+}
+#nglish{
+    font-size: 45px;
+}
+.tema{
+    margin: 20px;
+    color: orange;
+}
+.return{
+    border: 2px solid var(--font-color);
+    border-radius: 28px;
+    text-decoration: none;
+    min-width: 280px;
+    width: 280px;
+    height: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    color: var(--font-color);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.return:hover{
+    background-color: var(--bg-color);
+}
+/*-------------------------------------------------------------------------------------*/
+
+.free{
+    color: var(--font-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 225px;
+    font-size: 100px;
+}
+.record{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.text{
+    color: var(--font-color);
+    overflow: hidden;
+    width: 33%;
+    font-size: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+.cards{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    overflow: hidden;
+    width: 15%;
+    margin: 30px;
+    height: 300px;
+    border-radius: 25px;
+}
+.card-text{
+    color: var(--font-color);
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+}

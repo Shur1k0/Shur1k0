@@ -1,0 +1,243 @@
+:root{
+    --bg-color: #9dfa9d;
+    --font-color: #000000;
+    --e-color: #39E639;
+    --shad-color: #000000;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,1.jpg);
+}
+
+[data-theme = "dark"]{
+    --bg-color: #FF8C47;
+    --font-color: #ffffff;
+    --e-color: #EA4C04;
+    --shad-color: #ffffff;
+    --line-color: #ffffff;
+    --img-fon: url(../image/фон4,2.jpg);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .name {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #soft {
+        font-size: 20px;
+    }
+
+    #e,
+    #nglish {
+        font-size: 30px;
+    }
+
+    .return {
+        margin: 10px auto;
+        width: 50%;
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .area {
+        width: 90%;
+        min-width: auto;
+        margin-top: 20px;
+        height: auto;
+        overflow: auto;
+    }
+
+    .quiz-indicator {
+        margin: 10px auto;
+    }
+
+    .quiz-questions,
+    .quiz-results {
+        margin: 10px auto;
+    }
+
+    .quiz-questions-item__question,
+    .quiz-questions-item__answers,
+    .quiz-results-item__question,
+    .quiz-results-item__answers {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .btn-next,
+    .btn-restart {
+        margin: 10px auto;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.6;
+    width: 100%;
+    border-bottom: 2px solid var(--line-color);
+    box-shadow: 0px 50px 100px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+body{
+    background-image: var(--img-fon);
+}
+/*Название*/
+.name{
+    color: var(--font-color);
+    margin-bottom: 10px;
+    font-family: sans-serif;/*Название и его шрифт*/
+    font-weight: 700;
+}
+#soft{
+    font-size: 27px;
+}
+#e{
+    font-size: 45px;
+    color: var(--e-color);
+}
+#nglish{
+    font-size: 45px;
+}
+.tema{
+    margin: 20px;
+    color: orange;
+}
+.return{
+    border: 2px solid var(--font-color);
+    border-radius: 28px;
+    text-decoration: none;
+    min-width: 280px;
+    width: 280px;
+    height: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    color: var(--font-color);
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.return:hover{
+    background-color: var(--bg-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.area{
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    margin-top: 120px;
+    width: 33%;
+    min-width: 425px;
+    height: 700px;
+    border: 2px double var(--font-color);
+    border-radius: 25px;
+    overflow: scroll;
+}
+/*-------------------------------------------------------------------*/
+
+ul{
+    list-style: none;
+}
+li{
+    margin: 50px;
+}
+.quiz{
+    margin: 0 auto;
+}
+
+.quiz-indicator{
+    font-size: 25px;
+    margin: 20px 0 80px 130px;
+}
+.quiz-questions,
+.quiz-results{
+    margin-bottom: 20px;
+}
+
+.quiz-questions-item__question{
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.quiz-questions-item__answers{
+    margin-right: 100px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.quiz-questions-item,
+.quiz-results-item{
+    margin-bottom: 20px;
+}
+
+.quiz-results-item__question{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.quiz-questions-item__question,
+.quiz-results-item__answers{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.quiz-results{
+    display: none;
+}
+.btn-restart{
+    display: none;
+}
+
+.btn-next,
+.btn-restart{
+    width: 100px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+.btn-next:hover,
+.btn-restart:hover{
+    background-color: #9dfa9d;
+}
+.btn-restart{
+    margin-left: 35px;
+}
+.btn-next{
+    margin-left: 90px;
+}
+
+.questions--hidden,
+.indicator--hidden,
+.btn-next--hidden{
+    display: none;
+}
+
+.indicator--visible,
+.btn-restart--visible{
+    display: block;
+}
+
+.answer--invalid{
+    color: red;
+}
+.answer--valid{
+    color: green;
+}
